@@ -1,20 +1,15 @@
-/* const a = 5;
-const b = 2;
+const loginForm = document.getElementById("login-form");
+const loginInput = loginForm.querySelector("input");
+const loginButton = loginForm.querySelector("button");
 
-const myName = "jaeyoeng";
-
-
-console.log(a+b);
-console.log(a*b);
-console.log(a/b);
-console.log(myName); */
-
-const title = document.querySelector("div.hello:first-child h1");
-
-
-
-function handleTitleClick(){
-    title.style.color = "blue";
+function handleBtnClick(){
+    const value = loginInput.value;
+    if(value === "kim"){
+        console.log("yes");
+    }else{
+        console.log("no");
+    }
 }
 
-title.addEventListener("click", handleTitleClick);
+
+loginButton.addEventListener("click", handleBtnClick);
